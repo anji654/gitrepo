@@ -1,0 +1,12 @@
+node{
+    stage('clone java project') {
+    git branch: 'main', url: 'https://github.com/anji654/war.git'
+}
+  stage('execute maven targets') {
+    sh 'mvn install'
+}  
+    
+    
+    
+    
+}
